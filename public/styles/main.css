@@ -37,7 +37,6 @@
   #main {
     padding: 0;
     margin: 0;
-    background: red;
     position: relative;
     width: 100%;
     height: calc(100vh - 135px); }
@@ -55,9 +54,16 @@
   .preview {
     margin: 0;
     padding: 0;
-    background: yellow;
     margin: 0 auto;
-    width: 95%; } }
+    margin-bottom: 50px;
+    width: 95%; }
+    .preview .preview-date, .preview .preview-title {
+      padding: 0;
+      margin: 0; }
+    .preview .recipe-preview {
+      margin: 0;
+      padding: 0;
+      width: 100%; } }
 @media (min-width: 375px) {
   .title {
     margin-top: 20px;

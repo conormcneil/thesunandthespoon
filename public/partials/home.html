@@ -1,7 +1,8 @@
 <div class="home" ng-controller="SunController">
   <div class="preview" ng-repeat="post in view.posts track by $index">
     <!-- <img ng-src="{{ post.}}" alt=""> -->
-    <h2>{{ post.title }}</h2>
-    <p>{{ post.date | date }}</p>
+    <img ng-src="{{ post.images[0].url }}" alt="{{ post.title }}" title="{{ post.title }}" class="recipe-preview">
+    <p class='preview-date'>{{ post.date | date }}</p>
+    <h2 class="preview-title">{{ post.title }}</h2>
   </div>
 </div>

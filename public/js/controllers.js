@@ -4,10 +4,8 @@ app.controller('SunController',function($scope,$http) {
   (function getPosts() {
     console.log('get posts');
     $http.get('/posts').then(function(data) {
-      // console.log(data.data.images);
       $scope.view.posts = data.data.data;
-      $scope.view.posts.images = data.data.images;
-      console.log($scope.view.posts);
+      $scope.view.posts[0].images = data.data.images;
     })
   })();
 })
