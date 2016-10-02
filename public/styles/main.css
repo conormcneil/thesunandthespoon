@@ -3,11 +3,14 @@
     margin: 0;
     padding: 0;
     width: 95vw;
-    margin: 0 auto;
+    margin-left: calc(5vw / 2);
+    display: flex;
+    flex-flow: row wrap;
     font-family: "Catamaran", sans-serif; }
 
   nav {
     padding: 10px;
+    z-index: 50;
     width: calc(100% - 20px);
     border-top: 1px solid rgba(128, 128, 128, 0.25);
     position: fixed;
@@ -29,14 +32,40 @@
     margin-bottom: 10px; }
     .title #underline {
       border-bottom: 1px solid black;
-      width: 100%; } }
+      width: 100%; }
+
+  #main {
+    padding: 0;
+    margin: 0;
+    background: red;
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 135px); }
+
+  .home {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow-y: scroll; }
+
+  .preview {
+    margin: 0;
+    padding: 0;
+    background: yellow;
+    margin: 0 auto;
+    width: 95%; } }
 @media (min-width: 375px) {
   .title {
     margin-top: 20px;
     margin-bottom: 20px; } }
 @media (min-width: 414px) {
   body {
-    width: 90vw; }
+    width: 90vw;
+    margin-left: calc(10vw / 2); }
 
   .title {
     margin-top: 25px;

@@ -1,0 +1,7 @@
+<div class="home" ng-controller="SunController">
+  <div class="preview" ng-repeat="post in view.posts track by $index">
+    <!-- <img ng-src="{{ post.}}" alt=""> -->
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.date | date }}</p>
+  </div>
+</div>
