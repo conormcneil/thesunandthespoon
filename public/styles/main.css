@@ -61,18 +61,22 @@ a {
     position: fixed;
     top: 0;
     left: 0;
-    overflow-y: scroll; }
+    overflow-y: scroll;
+    display: flex;
+    flex-flow: row wrap; }
     sun-menu .menu {
+      width: 100%;
       padding: 2.5vw;
       height: 75vh;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-flow: column; }
-      sun-menu .menu .state {
+      sun-menu .menu .state-link {
         font-size: 1.85em;
         padding: 5px; }
     sun-menu .mini-me {
+      width: 100%;
       border-top: 1px solid rgba(128, 128, 128, 0.25);
       margin-bottom: 80px; }
       sun-menu .mini-me #preview-headshot {

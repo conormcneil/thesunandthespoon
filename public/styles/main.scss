@@ -69,19 +69,23 @@ a {
     top: 0;
     left: 0;
     overflow-y: scroll;
+    display: flex;
+    flex-flow: row wrap;
     .menu {
+      width: 100%;
       padding: 2.5vw;
       height: 75vh;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-flow: column;
-      .state {
+      .state-link {
         font-size: 1.85em;
         padding: 5px;
       }
     }
     .mini-me {
+      width: 100%;
       border-top: 1px solid rgba(grey,0.25);
       margin-bottom: 80px;
       #preview-headshot {
