@@ -14,6 +14,10 @@ app
         url: '/recipes',
         templateUrl: 'partials/recipes.html'
       })
+      .state('recipe',{
+        url: '/recipes/:id',
+        templateUrl: 'partials/recipe.html'
+      })
       .state('about-me',{
         url: '/about',
         templateUrl: 'partials/about-me.html'

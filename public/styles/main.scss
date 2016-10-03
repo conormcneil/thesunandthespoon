@@ -208,14 +208,19 @@ a {
     justify-content: space-between;
     .menu {
       width: 45%;
-      height: 90%;
+      height: 60vh;
       border-right: 1px solid rgba(grey,0.25);
     }
     .mini-me {
       margin: 5px;
       border: none;
       width: 45%;
-      height: 90%;
+      height: 75vh;
+      #preview-headshot {
+        margin: 0;
+        padding: 0;
+        width: 50%;
+      }
     }
   }
   .state {
@@ -246,5 +251,10 @@ a {
     display: flex;
     justify-content: center;
     position: relative;
+  }
+  .home {
+    .preview {
+      width: 19%;
+    }
   }
 }

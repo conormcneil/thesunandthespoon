@@ -79,9 +79,10 @@ a {
         font-size: 1.85em;
         padding: 5px; }
     sun-menu .mini-me {
+      padding: 5px;
+      margin-bottom: 80px;
       width: 100%;
       border-top: 1px solid rgba(128, 128, 128, 0.25);
-      margin-bottom: 80px;
       display: flex;
       flex-flow: column;
       align-items: center; }
@@ -176,12 +177,17 @@ a {
     justify-content: space-between; }
     sun-menu .menu {
       width: 45%;
-      height: 90%;
+      height: 60vh;
       border-right: 1px solid rgba(128, 128, 128, 0.25); }
     sun-menu .mini-me {
+      margin: 5px;
       border: none;
       width: 45%;
-      height: 90%; }
+      height: 75vh; }
+      sun-menu .mini-me #preview-headshot {
+        margin: 0;
+        padding: 0;
+        width: 50%; }
 
   .state {
     padding-top: 150px; }
@@ -205,6 +211,9 @@ a {
   body {
     display: flex;
     justify-content: center;
-    position: relative; } }
+    position: relative; }
+
+  .home .preview {
+    width: 19%; } }
 
 /*# sourceMappingURL=main.css.map */
