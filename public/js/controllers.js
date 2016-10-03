@@ -38,5 +38,16 @@ app.controller('SunController',function($scope,$http,$stateParams) {
 app.controller('RecipeController',function($scope,$http,$stateParams) {
   $http.get(`/posts/details/${$stateParams.id}`).then(function(data) {
     $scope.activeRecipe = data.data.data;
-  })
+    getImages($scope.activeRecipe.id);
+  });
+  function getImages(id,i) {
+    $http.post('/images/id',{id:id}).then(function(data) {
+      if (i) {
+        $scope.view.posts[i].images = data.data;
+      } else {
+        $scope.activeRecipe.images = data.data;
+        console.log($scope.activeRecipe.images);
+      }
+    });
+  };
 })

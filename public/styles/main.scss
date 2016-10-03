@@ -158,6 +158,24 @@ a {
     left: 0;
     width: 95vw;
   }
+  .recipe {
+    margin-bottom: 80px;
+    display: flex;
+    flex-flow: column;
+    .image-primary, .image-secondary {
+      width: 60%;
+    }
+    .image-secondary {
+      align-self: flex-end;
+    }
+    .ingredients {
+      ul {
+        li {
+          font-size: 0.75em;
+        }
+      }
+    }
+  }
 }
 
 @media(min-width: 375px) { // iPhone 6

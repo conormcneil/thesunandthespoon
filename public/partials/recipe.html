@@ -1,4 +1,11 @@
 <div class="recipe state">
   <h1>{{ activeRecipe.title }}</h1>
-  <p>test</p>
+  <img ng-src="{{ activeRecipe.images[0].url }}" alt="activeRecipe.images[0].title" title="activeRecipe.images[0].title" class="image-primary">
+  <p ng-bind-html="activeRecipe.body"></p>
+  <img ng-src="{{ activeRecipe.images[1].url }}" alt="activeRecipe.images[1].title" title="activeRecipe.images[1].title" class="image-secondary">
+
+  <h3 class="ingredients-title">Ingredients</h3>
+  <div class="ingredients" ng-bind-html="activeRecipe.ingredients"></div>
+  <h3 class="instructions-title">Instructions</h3>
+  <div class="instructions" ng-bind-html="activeRecipe.instructions"></div>
 </div>
