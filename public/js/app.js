@@ -17,6 +17,7 @@ app
       .state('recipe',{
         url: '/recipes/:id',
         templateUrl: 'partials/recipe.html'
+        // controller: function($stateParams)
       })
       .state('about-me',{
         url: '/about',
