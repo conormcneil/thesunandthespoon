@@ -20,8 +20,10 @@ a {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    position: relative;
     margin: 0 auto;
-    // background: blue;
+    background: blue;
+    border: 1px solid black;
     font-family: $font1;
   }
   nav {
@@ -101,6 +103,13 @@ a {
       margin-bottom: 80px;
     }
   }
+  footer {
+    position: absolute;
+    // bottom: 0;
+    top: 0;
+    left: 0;
+    width: 95vw;
+  }
 }
 
 @media(min-width: 375px) { // iPhone 6
@@ -125,6 +134,9 @@ a {
   .title {
     margin-top: 25px;
     margin-bottom: 25px;
+  }
+  footer {
+    width: 90vw;
   }
 }
 
