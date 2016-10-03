@@ -10,4 +10,15 @@ router.get('/', function(req, res, next) {
     })
 });
 
+router.get('/details/:id', function(req, res, next) {
+  knex('posts')
+    .where({
+      id: req.params.id
+    })
+    .first()
+    .then(function(data) {
+      res.json({data:data});
+    })
+});
+
 module.exports = router;

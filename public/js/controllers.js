@@ -1,4 +1,4 @@
-app.controller('SunController',function($scope,$http) {
+app.controller('SunController',function($scope,$http,$stateParams) {
   $scope.view = {};
   $scope.forms = {
     menu: false // false
@@ -34,3 +34,9 @@ app.controller('SunController',function($scope,$http) {
   },2000);
 
 });
+
+app.controller('RecipeController',function($scope,$http,$stateParams) {
+  $http.get(`/posts/details/${$stateParams.id}`).then(function(data) {
+    $scope.activeRecipe = data.data.data;
+  })
+})
