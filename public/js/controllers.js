@@ -1,5 +1,8 @@
 app.controller('SunController',function($scope,$http) {
   $scope.view = {};
+  $scope.forms = {
+    menu: true // false
+  }
 
 
   function getImages(id,i) {
@@ -21,6 +24,10 @@ app.controller('SunController',function($scope,$http) {
       };
     });
   })();
+
+  $scope.toggle = function(form) {
+    $scope.forms[form] = !$scope.forms[form];
+  };
 
   window.setTimeout(function() {
     console.log($scope.view.posts);

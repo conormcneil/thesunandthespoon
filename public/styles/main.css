@@ -43,10 +43,36 @@ a {
     width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
-    z-index: 50; }
+    z-index: 25; }
     .title #underline {
       border-bottom: 1px solid black;
       width: 100%; }
+
+  sun-menu {
+    width: 100vw;
+    height: 100vh;
+    z-index: 49;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: scroll; }
+    sun-menu .menu {
+      padding: 2.5vw;
+      height: 75vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column; }
+      sun-menu .menu .state {
+        font-size: 1.85em;
+        padding: 5px; }
+    sun-menu .mini-me {
+      border-top: 1px solid rgba(128, 128, 128, 0.25);
+      margin-bottom: 80px; }
+      sun-menu .mini-me #preview-headshot {
+        width: 150px;
+        border-radius: 50px; }
 
   #main {
     padding: 0;

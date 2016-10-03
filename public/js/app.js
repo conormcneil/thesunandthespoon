@@ -10,5 +10,15 @@ app
         url: '/',
         templateUrl: 'partials/home.html'
       })
+      .state('about-me',{
+        url: '/about',
+        templateUrl: 'partials/about-me.html'
+      })
     $locationProvider.html5Mode(true);
-  }]);
+  }])
+
+  .directive('sunMenu',function() {
+    return {
+      templateUrl: 'partials/menu.html'
+    }
+  });

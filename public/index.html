@@ -20,12 +20,12 @@
   <base href="/">
   <title>The Sun & The Spoon</title>
 </head>
-<body>
+<body ng-controller="SunController">
 
 
   <h1 class="title"><span id="underline">The Sun & The Spoon</span></h1>
   <nav>
-    <img src="./img/menu.png" class="mobile-menu pointer" alt="Main Menu" title="Main Menu">
+    <img src="./img/menu.png" class="mobile-menu pointer" alt="Main Menu" title="Main Menu" ng-click="toggle('menu')">
     <div class='links'>
       <a href="https://www.pinterest.com/shelbytson/recipes/" target="_blank"><i class="fa fa-pinterest" aria-hidden="true" class="link"></i></a>
       <a href="https://www.instagram.com/thesunandthespoon/" target="_blank"><i class="fa fa-instagram" aria-hidden="true" class="link"></i></a>
@@ -34,6 +34,8 @@
     </div>
     <i class="fa fa-search fa-lg" aria-hidden="true" class="search"></i>
   </nav>
+
+  <sun-menu ng-show="forms.menu"></sun-menu>
 
   <div ui-view id="main"></div>
 
