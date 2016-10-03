@@ -10,6 +10,10 @@ app
         url: '/',
         templateUrl: 'partials/home.html'
       })
+      .state('recipes',{
+        url: '/recipes',
+        templateUrl: 'partials/recipes.html'
+      })
       .state('about-me',{
         url: '/about',
         templateUrl: 'partials/about-me.html'
