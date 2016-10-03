@@ -1,7 +1,7 @@
 app.controller('SunController',function($scope,$http) {
   $scope.view = {};
   $scope.forms = {
-    menu: false // false
+    menu: true // false
   }
 
 
