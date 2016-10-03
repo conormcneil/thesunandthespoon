@@ -6,16 +6,7 @@ var knex = require('../db/knex');
 router.get('/', function(req, res, next) {
   knex('posts')
     .then(function(data) {
-      console.log('data',data);
-      // knex('posts_images')
-        // .where({
-        //   post_id: data.id
-        // })
-        // .innerJoin('images','posts_images.image_id','images.id')
-        // .then(function(img_data) {
-        //   console.log('img_data',img_data);
-          res.json({data:data});
-        // })
+      res.json({data:data});
     })
 });
 

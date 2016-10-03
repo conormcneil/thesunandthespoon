@@ -5,9 +5,10 @@ exports.up = function(knex, Promise) {
     table.string('title');
     table.string('headline');
     table.string('date');
-    table.integer('category');
-    table.text('body','longtext');
-    table.text('ingredients','longtext');
+    table.integer('category_id');
+    table.text('body','longtext'); // Stored as HTML
+    table.text('ingredients','longtext'); // Stored as HTML
+    table.text('instructions','longtext'); // Stored as HTML
   })
 };
 

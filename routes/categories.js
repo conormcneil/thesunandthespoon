@@ -4,12 +4,14 @@ var knex = require('../db/knex');
 
 
 router.post('/id', function(req, res, next) {
-  knex('images')
+  var category_id = req.body.id;
+  knex('categories')
     .where({
-      post_id: req.body.id
+      id: req.body.id
     })
-    .then(function(data) {
-      res.json(data);
+    .first()
+    .then(function(category) {
+      res.json(category);
     })
 });
 

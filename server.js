@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 
 var posts = require('./routes/posts');
 var images = require('./routes/images');
+var categories = require('./routes/categories');
 
 var app = express();
 
@@ -24,6 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/posts', posts);
 app.use('/images', images);
+app.use('/categories', categories);
 
 // redirect from # to remove from URL
 app.get('*',function(req, res) {

@@ -6,6 +6,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
+.pointer {
+  cursor: pointer;
+}
 
 @media(min-width: 320px) { // iPhone 5
   body {
