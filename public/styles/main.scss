@@ -23,7 +23,7 @@ a {
     position: relative;
     margin: 0 auto;
     // background: blue;
-    border: 1px solid black;
+    // border: 1px solid black;
     font-family: $font1;
   }
   nav {
@@ -146,14 +146,8 @@ a {
   }
   .title {
     font-size: 2.8em;
-  }
-}
-
-@media(min-width: 1024px) { // iPad - Landscape
-  body {
-    display: flex;
-    justify-content: center;
-    position: relative;
+    position: fixed;
+    width: 90vw;
   }
   nav {
     background: none;
@@ -166,10 +160,6 @@ a {
     left: auto;
     height: 0%;
   }
-  .title {
-    width: 90vw;
-    position: fixed;
-  }
   .home {
     margin-bottom: 500px;
     display: flex;
@@ -180,4 +170,14 @@ a {
       width: 30%;
     }
   }
+}
+
+@media(min-width: 1024px) { // iPad - Landscape
+  body {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+
 }
