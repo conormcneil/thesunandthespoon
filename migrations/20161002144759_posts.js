@@ -5,6 +5,7 @@ exports.up = function(knex, Promise) {
     table.string('title');
     table.string('headline');
     table.string('date');
+    table.integer('category');
     table.text('body','longtext');
     table.text('ingredients','longtext');
   })

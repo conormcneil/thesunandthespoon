@@ -16,19 +16,19 @@ exports.seed = function(knex, Promise) {
         knex('posts_images').insert({
           post_id: 2,
           image_id: 3
-        })
+        }),
         knex('posts_images').insert({
           post_id: 2,
           image_id: 4
-        })
+        }),
         knex('posts_images').insert({
           post_id: 2,
           image_id: 5
-        })
+        }),
         knex('posts_images').insert({
           post_id: 2,
           image_id: 6
-        })
+        }),
         knex('posts_images').insert({
           post_id: 2,
           image_id: 7
