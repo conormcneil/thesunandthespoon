@@ -128,6 +128,9 @@ a {
   }
   .about-me {
     margin-bottom: 80px;
+    img {
+      width: 100%;
+    }
     p {
       font-size: 1.1em;
     }
@@ -179,14 +182,25 @@ a {
     left: auto;
     height: 0%;
   }
+  .state {
+    padding-top: 150px;
+  }
   .home {
     margin-bottom: 500px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    padding-top: 150px;
     .preview {
       width: 30%;
+    }
+  }
+  .about-me {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 60%;
     }
   }
 }

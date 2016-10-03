@@ -113,6 +113,8 @@ a {
 
   .about-me {
     margin-bottom: 80px; }
+    .about-me img {
+      width: 100%; }
     .about-me p {
       font-size: 1.1em; }
 
@@ -152,14 +154,24 @@ a {
     left: auto;
     height: 0%; }
 
+  .state {
+    padding-top: 150px; }
+
   .home {
     margin-bottom: 500px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
-    padding-top: 150px; }
+    justify-content: space-between; }
     .home .preview {
-      width: 30%; } }
+      width: 30%; }
+
+  .about-me {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center; }
+    .about-me img {
+      width: 60%; } }
 @media (min-width: 1024px) {
   body {
     display: flex;
