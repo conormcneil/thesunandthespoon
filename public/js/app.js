@@ -25,4 +25,9 @@ app
     return {
       templateUrl: 'partials/menu.html'
     }
+  })
+  .directive('recipePreview',function() {
+    return {
+      templateUrl: 'partials/recipe-preview.html'
+    }
   });
