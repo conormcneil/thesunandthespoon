@@ -31,7 +31,7 @@ app.controller('SunController',function($scope,$http,$stateParams) {
 
   window.setTimeout(function() {
     console.log($scope.view.posts);
-  },2000);
+  },500);
 
 });
 

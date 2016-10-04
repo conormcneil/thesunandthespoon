@@ -43,6 +43,16 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    #search {
+      text-align: center;
+      font-family: $font1;
+      font-size: 1.3em;
+      border: none;
+      height: 30px;
+      width: 60%;
+      max-width: 80%;
+      box-shadow: 1px 1px 3px rgba(grey,0.25);
+    }
     .mobile-menu {
       height: 2.5em;
     }
@@ -199,6 +209,9 @@ a {
     width: 90vw;
   }
   nav {
+    #search {
+      width: 70%;
+    }
   }
   .title {
     margin-top: 25px;
@@ -239,6 +252,9 @@ a {
     top: 0;
     left: auto;
     height: 0%;
+    #search {
+      margin-top: -10px;
+    }
   }
   sun-menu {
     padding-top: 150px;

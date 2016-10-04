@@ -1,5 +1,5 @@
 <!-- <div class="home" ng-controller="SunController"> -->
 <div class="home state">
-  <recipe-preview class="preview" ng-repeat="recipe in view.posts | orderBy:'-date'">
+  <recipe-preview class="preview" ng-repeat="recipe in view.posts | filter:view.searchText | orderBy:'-date'">
   </recipe-preview>
 </div>

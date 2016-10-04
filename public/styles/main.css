@@ -38,6 +38,15 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    nav #search {
+      text-align: center;
+      font-family: "Catamaran", sans-serif;
+      font-size: 1.3em;
+      border: none;
+      height: 30px;
+      width: 60%;
+      max-width: 80%;
+      box-shadow: 1px 1px 3px rgba(128, 128, 128, 0.25); }
     nav .mobile-menu {
       height: 2.5em; }
     nav .search {
@@ -163,6 +172,9 @@ a {
   body {
     width: 90vw; }
 
+  nav #search {
+    width: 70%; }
+
   .title {
     margin-top: 25px;
     margin-bottom: 25px; }
@@ -196,6 +208,8 @@ a {
     top: 0;
     left: auto;
     height: 0%; }
+    nav #search {
+      margin-top: -10px; }
 
   sun-menu {
     padding-top: 150px;
