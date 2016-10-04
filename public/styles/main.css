@@ -244,6 +244,15 @@ a {
     position: relative; }
 
   .home .preview {
+    width: 30%; } }
+@media (min-width: 1280px) {
+  body {
+    width: 85vw; }
+
+  nav {
+    width: 85vw; }
+
+  .home .preview {
     width: 22%; } }
 
 /*# sourceMappingURL=main.css.map */
