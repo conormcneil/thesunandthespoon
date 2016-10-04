@@ -127,6 +127,60 @@ exports.seed = function(knex, Promise) {
           post_id: 5,
           title: "Blueberry Streusel Baked Oatmeal 2",
           url: "https://res.cloudinary.com/dmuipy77o/image/upload/v1475548717/blueberry_oatmeal_2_cjajzx.jpg"
+        }),
+        knex('images').insert({
+          id: 21,
+          post_id: 6,
+          title: "Cinammon Rawnola 1",
+          url: "https://res.cloudinary.com/dmuipy77o/image/upload/v1475605019/cinnamon_rawnola_1_dad3vk.jpg"
+        }),
+        knex('images').insert({
+          id: 22,
+          post_id: 6,
+          title: "Cinammon Rawnola 2",
+          url: "https://res.cloudinary.com/dmuipy77o/image/upload/v1475605019/cinnamon_rawnola_2_fho6hz.jpg"
+        }),
+        knex('images').insert({
+          id: 23,
+          post_id: 6,
+          title: "Cinammon Rawnola 3",
+          url: "https://res.cloudinary.com/dmuipy77o/image/upload/v1475605019/cinnamon_rawnola_3_shwv02.jpg"
+        }),
+        knex('images').insert({
+          id: 24,
+          post_id: 6,
+          title: "Cinammon Rawnola 4",
+          url: "https://res.cloudinary.com/dmuipy77o/image/upload/v1475605019/cinnamon_rawnola_4_uz5502.jpg"
+        }),
+        knex('images').insert({
+          id: 25,
+          post_id: 6,
+          title: "Cinammon Rawnola 5",
+          url: "https://res.cloudinary.com/dmuipy77o/image/upload/v1475605020/cinnamon_rawnola_5_dvzoa4.jpg"
+        }),
+        knex('images').insert({
+          id: 26,
+          post_id: 7,
+          title: "Sweet Chili BBQ Roasted Vegetables 1",
+          url: "http://res.cloudinary.com/dmuipy77o/image/upload/v1475605649/bbq_roasted_vegetables_1_b3cavj.jpg"
+        }),
+        knex('images').insert({
+          id: 27,
+          post_id: 7,
+          title: "Sweet Chili BBQ Roasted Vegetables 2",
+          url: "https://res.cloudinary.com/dmuipy77o/image/upload/v1475605649/bbq_roasted_vegetables_2_rhsnyh.jpg"
+        }),
+        knex('images').insert({
+          id: 28,
+          post_id: 7,
+          title: "Sweet Chili BBQ Roasted Vegetables 3",
+          url: "https://res.cloudinary.com/dmuipy77o/image/upload/v1475605649/bbq_roasted_vegetables_3_ctogeu.jpg"
+        }),
+        knex('images').insert({
+          id: 29,
+          post_id: 7,
+          title: "Sweet Chili BBQ Roasted Vegetables 4",
+          url: "https://res.cloudinary.com/dmuipy77o/image/upload/v1475605648/bbq_roasted_vegetables_4_nmclgy.jpg"
         })
       ]);
     });
