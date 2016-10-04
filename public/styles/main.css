@@ -109,8 +109,7 @@ a {
     text-align: center; }
 
   .preview {
-    width: 95%;
-    margin-bottom: 500px; }
+    width: 95%; }
     .preview .preview-date, .preview .preview-title, .preview .preview-category {
       margin: 0; }
     .preview .preview-category {
@@ -218,7 +217,6 @@ a {
     padding-top: 125px; }
 
   .home {
-    margin-bottom: 500px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between; }
@@ -246,6 +244,6 @@ a {
     position: relative; }
 
   .home .preview {
-    width: 19%; } }
+    width: 22%; } }
 
 /*# sourceMappingURL=main.css.map */

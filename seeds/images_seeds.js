@@ -85,6 +85,48 @@ exports.seed = function(knex, Promise) {
           post_id: 3,
           title: "Peachy Keen Cheesecake 6",
           url: "https://res.cloudinary.com/dmuipy77o/image/upload/v1475511370/peach_cheesecake_6_zdpajf.jpg"
+        }),
+        knex('images').insert({
+          id: 14,
+          post_id: 4,
+          title: "Banana Bread Granola 1",
+          url: "https://res.cloudinary.com/dmuipy77o/image/upload/v1475518699/banana_bread_granola_5_xjosio.jpg"
+        }),
+        knex('images').insert({
+          id: 15,
+          post_id: 4,
+          title: "Banana Bread Granola 2",
+          url: "https://res.cloudinary.com/dmuipy77o/image/upload/v1475518699/banana_bread_granola_2_h5xnap.jpg"
+        }),
+        knex('images').insert({
+          id: 16,
+          post_id: 4,
+          title: "Banana Bread Granola 3",
+          url: "https://res.cloudinary.com/dmuipy77o/image/upload/v1475518698/banana_bread_granola_3_sjiwfb.jpg"
+        }),
+        knex('images').insert({
+          id: 17,
+          post_id: 4,
+          title: "Banana Bread Granola 4",
+          url: "https://res.cloudinary.com/dmuipy77o/image/upload/v1475518699/banana_bread_granola_4_dv9cm2.jpg"
+        }),
+        knex('images').insert({
+          id: 18,
+          post_id: 4,
+          title: "Banana Bread Granola 5",
+          url: "https://res.cloudinary.com/dmuipy77o/image/upload/v1475518697/banana_bread_granola_1_xyg7rg.jpg"
+        }),
+        knex('images').insert({
+          id: 19,
+          post_id: 5,
+          title: "Blueberry Streusel Baked Oatmeal 1",
+          url: "https://res.cloudinary.com/dmuipy77o/image/upload/v1475548717/blueberry_oatmeal_1_zbes7u.jpg"
+        }),
+        knex('images').insert({
+          id: 20,
+          post_id: 5,
+          title: "Blueberry Streusel Baked Oatmeal 2",
+          url: "https://res.cloudinary.com/dmuipy77o/image/upload/v1475548717/blueberry_oatmeal_2_cjajzx.jpg"
         })
       ]);
     });
