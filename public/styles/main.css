@@ -40,6 +40,8 @@ a {
     align-items: center; }
     nav .mobile-menu {
       height: 2.5em; }
+    nav .search {
+      cursor: pointer; }
 
   .title {
     font-variant: small-caps;

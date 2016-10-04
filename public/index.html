@@ -26,14 +26,15 @@
 
   <h1 class="title"><a ui-sref="home"><span id="underline">The Sun & The Spoon</span></a></h1>
   <nav>
-    <img src="./img/menu.png" class="mobile-menu pointer" alt="Main Menu" title="Main Menu" ng-click="toggle('menu')">
+    <img src="./img/icons/menu.png" class="mobile-menu pointer" alt="Main Menu" title="Main Menu" ng-click="toggle('menu')" ng-show="!forms.menu">
+    <img src="./img/icons/close_3x.png" class="mobile-menu pointer" alt="Close Menu" title="Close Menu" ng-click="toggle('menu')" ng-show="forms.menu">
     <div class='links'>
       <a href="https://www.pinterest.com/shelbytson/recipes/" target="_blank"><i class="fa fa-pinterest" aria-hidden="true" class="link"></i></a>
       <a href="https://www.instagram.com/thesunandthespoon/" target="_blank"><i class="fa fa-instagram" aria-hidden="true" class="link"></i></a>
       <a href="https://www.facebook.com/thesunandthespoon/" target="_blank"><i class="fa fa-facebook" aria-hidden="true" class="link"></i></a>
       <a href="mailto:thesunandthespoon@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true" class="link"></i></a>
     </div>
-    <i class="fa fa-search fa-lg" aria-hidden="true" class="search"></i>
+    <i class="fa fa-search fa-lg" aria-hidden="true" class="search pointer"></i>
   </nav>
 
   <sun-menu ng-show="forms.menu"></sun-menu>
