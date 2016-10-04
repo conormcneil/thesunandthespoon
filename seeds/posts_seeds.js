@@ -35,16 +35,16 @@ exports.seed = function(knex, Promise) {
           ingredients: '<ul><li>3 peaches, chopped into ½" pieces</li><li>¼ cup water</li><li>1 T maple syrup, honey, or brown rice syrup</li><li>1 cup oats, toasted</li><li>½ cup walnuts, toasted</li><li>¼ teaspoon sea salt</li><li>½ teaspoon pumpkin pie spice</li><li>1.25 cups pitted Medjool dates</li><li>1.5 cups raw soaked cashews</li><li>2 T fresh lemon juice</li><li>1 teaspoon vanilla extract</li><li>¼ cup coconut oil, melted</li><li>½ cup full fat coconut milk</li><li>⅓ cup brown rice syrup or maple syrup</li></ul>',
           instructions: '<ol><li>Place cashews in a medium-sized bowl. Pour three cups of boiling water over the cashews and allow them to soak for an hour.</li><li>Combine chopped peaches, water, and maple syrup in a small saucepan over medium-low heat. Allow the mixture to simmer for 15-20 minutes until the mixture has thickened. Remove from heat and allow to cool.</li><li>Place oats, walnuts, sea salt, pumpkin pie spice, and Medjool dates in a food processor. Pulse the ingredients together until they are fine. Press the mixture into the bottom of a 9-inch cake pan or spring form pan.</li><li>Drain the cashews and add them to a high-speed blender with the lemon juice, vanilla, coconut oil, coconut milk, and brown rice syrup. Blend the mixture until it is smooth and creamy. Pour the mixture into the cake pan over the prepared crust.</li><li>Spoon the cooked peaches over the cheesecake filling. Use a knife to gently swirl the peaches through the filling.</li><li>Freeze the cheesecake for at least 4 hours. Remove the cheesecake from the freezer 20 minutes before serving.</li><li>Store in the freezer.</li></ol>'
         })
-        // knex('posts').insert({
-        //   id: 4,
-        //   title: 'Banana Bread Granola',
-        //   headline: 'Get some.',
-        //   date: '1472000735366',
-        //   category_id: 4,
-        //   body: '<p> </p>',
-        //   ingredients: '<ul><li> </li></ul>',
-        //   instructions: '<ol><li> </li></ol>'
-        // })
+        knex('posts').insert({
+          id: 4,
+          title: 'Banana Bread Granola',
+          headline: 'Get some.',
+          date: '1472000735366',
+          category_id: 4,
+          body: '<p> </p>',
+          ingredients: '<ul><li> </li></ul>',
+          instructions: '<ol><li> </li></ol>'
+        })
       ]);
     });
 };
