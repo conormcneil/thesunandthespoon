@@ -35,7 +35,7 @@ app.controller('SunController',function($scope,$http,$stateParams) {
 
 });
 
-app.controller('RecipeController',function($scope,$http,$stateParams) {
+app.controller('RecipeController',function($scope,$http,$stateParams,$state) {
   $http.get(`/posts/details/${$stateParams.id}`).then(function(data) {
     $scope.activeRecipe = data.data.data;
     getImages($scope.activeRecipe.id);
