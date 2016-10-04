@@ -79,9 +79,10 @@ a {
         font-size: 1.85em;
         padding: 5px; }
     sun-menu .mini-me {
+      padding: 5px;
+      margin-bottom: 80px;
       width: 100%;
       border-top: 1px solid rgba(128, 128, 128, 0.25);
-      margin-bottom: 80px;
       display: flex;
       flex-flow: column;
       align-items: center; }
@@ -112,7 +113,6 @@ a {
     margin: 0;
     padding: 0;
     margin: 0 auto;
-    margin-bottom: 50px;
     width: 95%; }
     .preview .preview-date, .preview .preview-title {
       padding: 0;
@@ -135,11 +135,35 @@ a {
     position: absolute;
     top: 0;
     left: 0;
-    width: 95vw; } }
+    width: 95vw; }
+
+  .recipe {
+    margin-bottom: 80px;
+    display: flex;
+    flex-flow: row wrap; }
+    .recipe .recipe-title {
+      width: 100vw; }
+    .recipe .image-primary, .recipe .image-secondary {
+      width: 60%;
+      height: 60%; }
+    .recipe .image-secondary {
+      align-self: flex-end; }
+    .recipe .ingredients {
+      width: 100%; }
+      .recipe .ingredients ul li {
+        font-size: 0.75em; }
+    .recipe .instructions {
+      width: 100%; } }
 @media (min-width: 375px) {
   .title {
     margin-top: 20px;
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+
+  .recipe .image-secondary {
+    align-self: flex-start;
+    width: 50%; }
+  .recipe .ingredients {
+    width: 45%; } }
 @media (min-width: 414px) {
   body {
     width: 90vw; }
@@ -150,6 +174,14 @@ a {
 
   sun-menu {
     font-size: 1.1em; }
+
+  .recipe .image-secondary {
+    padding: 10px;
+    align-self: center;
+    width: 45%;
+    height: 45%; }
+  .recipe .ingredients {
+    width: 45%; }
 
   footer {
     width: 90vw; } }
@@ -176,15 +208,20 @@ a {
     justify-content: space-between; }
     sun-menu .menu {
       width: 45%;
-      height: 90%;
+      height: 60vh;
       border-right: 1px solid rgba(128, 128, 128, 0.25); }
     sun-menu .mini-me {
+      margin: 5px;
       border: none;
       width: 45%;
-      height: 90%; }
+      height: 75vh; }
+      sun-menu .mini-me #preview-headshot {
+        margin: 0;
+        padding: 0;
+        width: 50%; }
 
   .state {
-    padding-top: 150px; }
+    padding-top: 120px; }
 
   .home {
     margin-bottom: 500px;
@@ -200,11 +237,21 @@ a {
     justify-content: center;
     align-items: center; }
     .about-me img {
-      width: 60%; } }
+      width: 60%; }
+
+  .recipe .image-primary {
+    width: 40%; }
+  .recipe .image-secondary {
+    width: 50%; }
+  .recipe .ingredients {
+    width: 30%; } }
 @media (min-width: 1024px) {
   body {
     display: flex;
     justify-content: center;
-    position: relative; } }
+    position: relative; }
+
+  .home .preview {
+    width: 19%; } }
 
 /*# sourceMappingURL=main.css.map */

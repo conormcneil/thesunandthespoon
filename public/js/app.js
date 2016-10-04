@@ -1,4 +1,4 @@
-var app = angular.module("theSun",['ui.router']);
+var app = angular.module("theSun",['ui.router','ngSanitize']);
 
 
 app
@@ -13,6 +13,11 @@ app
       .state('recipes',{
         url: '/recipes',
         templateUrl: 'partials/recipes.html'
+      })
+      .state('recipe',{
+        url: '/recipes/:id',
+        templateUrl: 'partials/recipe.html',
+        controller: 'RecipeController'
       })
       .state('about-me',{
         url: '/about',
