@@ -160,19 +160,27 @@ a {
   .recipe {
     margin-bottom: 80px;
     display: flex;
-    flex-flow: column;
+    flex-flow: row wrap;
+    .recipe-title {
+      width: 100vw;
+    }
     .image-primary, .image-secondary {
       width: 60%;
+      height: 60%;
     }
     .image-secondary {
       align-self: flex-end;
     }
     .ingredients {
+      width: 100%;
       ul {
         li {
           font-size: 0.75em;
         }
       }
+    }
+    .instructions {
+      width: 100%;
     }
   }
 }
@@ -181,6 +189,18 @@ a {
   .title {
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+  .recipe {
+    .image-secondary {
+      align-self: flex-start;
+      width: 50%;
+    }
+    .instructions, .ingredients {
+      width: 45%;
+    }
+    .instructions {
+      clear: both;
+    }
   }
 }
 
@@ -196,6 +216,17 @@ a {
   }
   sun-menu {
     font-size: 1.1em;
+  }
+  .recipe {
+    .image-secondary {
+      padding: 15px;
+      align-self: flex-start;
+      width: 40%;
+      height: 40%;
+    }
+    .instructions, .ingredients {
+      width: 45%;
+    }
   }
   footer {
     width: 90vw;
@@ -241,7 +272,7 @@ a {
     }
   }
   .state {
-    padding-top: 150px;
+    padding-top: 120px;
   }
   .home {
     margin-bottom: 500px;
@@ -259,6 +290,17 @@ a {
     align-items: center;
     img {
       width: 60%;
+    }
+  }
+  .recipe {
+    .image-primary {
+      width: 40%;
+    }
+    .image-secondary {
+      width: 30%;
+    }
+    .instructions, .ingredients {
+      width: 30%;
     }
   }
 }
