@@ -35,6 +35,7 @@
       <a href="mailto:thesunandthespoon@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true" class="link"></i></a>
     </div>
     <input id="search" type="text" ng-show="forms.search" ng-model="view.searchText" placeholder="Search..." autofocus>
+    <img src="./img/icons/close_3x.png" id="clear-search" alt="Clear Search" title="Clear Search" ng-show="view.searchText" ng-click="view.searchText = '';toggle('search')">
     <i class="fa fa-search fa-lg" aria-hidden="true" class="search pointer" ng-click="toggle('search')"></i>
   </nav>
 

@@ -47,6 +47,8 @@ a {
       width: 60%;
       max-width: 80%;
       box-shadow: 1px 1px 3px rgba(128, 128, 128, 0.25); }
+    nav #clear-search {
+      height: 30px; }
     nav .mobile-menu {
       height: 2.5em; }
     nav .search {
