@@ -2,9 +2,7 @@ app.controller('SunController',function($scope,$http,$stateParams) {
   $scope.view = {};
   $scope.forms = {
     menu: false // false
-  }
-
-
+  };
   function getImages(id,i) {
     $http.post('/images/id',{id:id}).then(function(data) {
       $scope.view.posts[i].images = data.data;
@@ -15,6 +13,7 @@ app.controller('SunController',function($scope,$http,$stateParams) {
       $scope.view.posts[i].category = data.data.category;
     });
   };
+  // IFFE to get posts on page load
   (function getPosts() {
     $http.get('/posts').then(function(data) {
       $scope.view.posts = data.data.data;
@@ -24,15 +23,12 @@ app.controller('SunController',function($scope,$http,$stateParams) {
       };
     });
   })();
-
   $scope.toggle = function(form) {
     $scope.forms[form] = !$scope.forms[form];
   };
-
   window.setTimeout(function() {
     console.log($scope.view.posts);
   },500);
-
 });
 
 app.controller('RecipeController',function($scope,$http,$stateParams,$state) {
@@ -42,12 +38,7 @@ app.controller('RecipeController',function($scope,$http,$stateParams,$state) {
   });
   function getImages(id,i) {
     $http.post('/images/id',{id:id}).then(function(data) {
-      if (i) {
-        $scope.view.posts[i].images = data.data;
-      } else {
-        $scope.activeRecipe.images = data.data;
-        console.log($scope.activeRecipe.images);
-      }
+      i ? $scope.view.posts[i].images = data.data : $scope.activeRecipe.images = data.data;
     });
   };
 })
