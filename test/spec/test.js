@@ -3,7 +3,6 @@
 
   describe('Should built HTML from strings', function () {
     // describe('returns a string that is an ordered list with HTML tags', function () {
-    //   var pTags = '';
     //   it('should return the HTML elements as a string', function (pTags) {
     //     expect(true).toBe(true);
     //   });
