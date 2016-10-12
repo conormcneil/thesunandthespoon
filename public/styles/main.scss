@@ -2,6 +2,9 @@
 // @import 'base/all';
 // @import 'modules/all';
 
+.accent {
+  color: $accent;
+}
 ::-webkit-scrollbar {
     display: none;
 }
@@ -135,11 +138,17 @@ a {
     top: 0;
     width: 100%;
     text-align: center;
+    recipe-preview {
+      color: $accent;
+    }
   }
   .preview {
     width: 95%;
     .preview-date, .preview-title, .preview-category {
       margin: 0;
+    }
+    .preview-date, .preview-category {
+      color: rgba(99,99,99,0.6);
     }
     .preview-category {
       margin-bottom: 70px;

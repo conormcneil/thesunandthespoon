@@ -1,3 +1,6 @@
+.accent {
+  color: #ffa000; }
+
 ::-webkit-scrollbar {
   display: none; }
 
@@ -120,11 +123,15 @@ a {
     top: 0;
     width: 100%;
     text-align: center; }
+    .home recipe-preview {
+      color: #ffa000; }
 
   .preview {
     width: 95%; }
     .preview .preview-date, .preview .preview-title, .preview .preview-category {
       margin: 0; }
+    .preview .preview-date, .preview .preview-category {
+      color: rgba(99, 99, 99, 0.6); }
     .preview .preview-category {
       margin-bottom: 70px; }
     .preview .recipe-preview {
