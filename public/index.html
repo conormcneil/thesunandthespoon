@@ -34,9 +34,9 @@
       <a href="https://www.facebook.com/thesunandthespoon/" target="_blank"><i class="fa fa-facebook" aria-hidden="true" class="link"></i></a>
       <a href="mailto:thesunandthespoon@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true" class="link"></i></a>
     </div>
-    <input id="search" type="text" ng-show="forms.search" ng-model="view.searchText" placeholder="Search..." autofocus>
-    <img src="./img/icons/close_3x.png" id="clear-search" alt="Clear Search" title="Clear Search" ng-show="view.searchText" ng-click="view.searchText = '';toggle('search')">
-    <i class="fa fa-search fa-lg" aria-hidden="true" class="search pointer" ng-click="toggle('search')"></i>
+    <input style="border-color: red;" id="search" type="text" ng-show="forms.search" ng-model="view.searchText" placeholder="Search..." autofocus>
+    <img src="./img/icons/close_3x.png" id="clear-search" class="pointer" alt="Clear Search" title="Clear Search" ng-show="forms.search" ng-click="view.searchText = '';toggle('search')">
+    <i class="fa fa-search fa-lg search pointer" aria-hidden="true" ng-click="toggle('search')"></i>
   </nav>
 
   <sun-menu ng-show="forms.menu"></sun-menu>
@@ -44,7 +44,7 @@
   <div ui-view id="main"></div>
 
   <!-- <footer>
-    <p>Copyright &copy; 2016 <a href="www.conorkingston.com" target="_blank">CK Designs</a></p>
+    <p>Copyright &copy; 2016 <a href="www.conorkingston.com" target="_blank">conor kingston</a></p>
   </footer> -->
 
 

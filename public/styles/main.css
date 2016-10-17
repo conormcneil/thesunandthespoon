@@ -1,3 +1,18 @@
+.shadow-1 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12); }
+
+.shadow-2 {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); }
+
+.shadow-3 {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19); }
+
+.shadow-4 {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25); }
+
+.shadow-5 {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3); }
+
 .accent {
   color: #ffa000; }
 
@@ -146,9 +161,9 @@ a {
 
   footer {
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
-    width: 95vw; }
+    width: 100vw; }
 
   .recipe {
     margin-bottom: 80px;
@@ -197,10 +212,7 @@ a {
     width: 45%;
     height: 45%; }
   .recipe .ingredients {
-    width: 45%; }
-
-  footer {
-    width: 90vw; } }
+    width: 45%; } }
 @media (min-width: 768px) {
   .title {
     font-size: 2.8em;
