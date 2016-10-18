@@ -52,7 +52,8 @@ a {
   nav {
     padding: 10px;
     z-index: 50;
-    width: calc(100vw - 5vw);
+    // width: calc(100vw - 5vw);
+    width: calc(100vw - 20px);
     border-top: 1px solid rgba(grey,0.25);
     background: white;
     position: fixed;
