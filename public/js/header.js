@@ -8,12 +8,12 @@ $(document).ready(function() {
       if (window.scrollY > toggleHeight && !$('nav').hasClass('scrolled')) {
         // $('#title').addClass('scrolled');
         $('nav').addClass('scrolled');
-        $('.home').addClass('scrolled-padding');
+        $('.state').addClass('scrolled-padding');
         console.log('added class');
       } else if (window.scrollY < toggleHeight && $('nav').hasClass('scrolled')) {
         // $('#title').removeClass('scrolled');
         $('nav').removeClass('scrolled');
-        $('.home').removeClass('scrolled-padding');
+        $('.state').removeClass('scrolled-padding');
         console.log('removed class');
       }
     }
