@@ -9,11 +9,13 @@ $(document).ready(function() {
         // $('#title').addClass('scrolled');
         $('nav').addClass('scrolled');
         $('.state').addClass('scrolled-padding');
+        $('#search').addClass('scrolled-search');
         console.log('added class');
       } else if (window.scrollY < toggleHeight && $('nav').hasClass('scrolled')) {
         // $('#title').removeClass('scrolled');
         $('nav').removeClass('scrolled');
         $('.state').removeClass('scrolled-padding');
+        $('#search').removeClass('scrolled-search');
         console.log('removed class');
       }
     }

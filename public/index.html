@@ -36,7 +36,7 @@
       <a href="https://www.facebook.com/thesunandthespoon/" target="_blank"><i class="fa fa-facebook" aria-hidden="true" class="link"></i></a>
       <a href="mailto:thesunandthespoon@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true" class="link"></i></a>
     </div>
-    <input style="border-color: red;" id="search" type="text" ng-show="forms.search" ng-model="view.searchText" placeholder="Search..." autofocus>
+    <input id="search" type="text" ng-show="forms.search" ng-model="view.searchText" placeholder="Search..." autofocus>
     <img src="./img/icons/close_3x.png" id="clear-search" class="pointer" alt="Clear Search" title="Clear Search" ng-show="forms.search" ng-click="view.searchText = '';toggle('search')">
     <i class="fa fa-search fa-lg search pointer" aria-hidden="true" ng-click="toggle('search')"></i>
   </nav>
