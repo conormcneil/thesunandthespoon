@@ -82,7 +82,7 @@ a {
       cursor: pointer;
     }
   }
-  .title {
+  #title {
     font-variant: small-caps;
     position: relative;
     top: 0;
@@ -97,6 +97,12 @@ a {
       border-bottom: 1px solid black;
       width: 100%;
     }
+  }
+  .scrolled {
+    background: red;
+    // position: static;
+    // top: 0;
+    // z-index: 999;
   }
   sun-menu {
     width: 100vw;

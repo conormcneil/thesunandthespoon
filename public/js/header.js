@@ -3,11 +3,15 @@ $(document).ready(function() {
   // console.log(window);
 
   $(document).on('scroll',function() {
-    if (window.scrollY > 100) {
-      console.log('header changed');
-      console.log(window.scrollY);
-    } else {
-      console.log('og header');
+    if (window.innerWidth >= 768 ) {
+      var toggleHeight = 10;
+      if (window.scrollY > toggleHeight && !$('#title').hasClass('scrolled')) {
+        $('#title').addClass('scrolled');
+        console.log('added class');
+      } else if (window.scrollY < toggleHeight && $('#title').hasClass('scrolled')) {
+        $('#title').removeClass('scrolled');
+        console.log('removed class');
+      }
     }
   })
 });
