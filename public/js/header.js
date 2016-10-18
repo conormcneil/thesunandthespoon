@@ -4,12 +4,16 @@ $(document).ready(function() {
 
   $(document).on('scroll',function() {
     if (window.innerWidth >= 768 ) {
-      var toggleHeight = 10;
-      if (window.scrollY > toggleHeight && !$('#title').hasClass('scrolled')) {
-        $('#title').addClass('scrolled');
+      var toggleHeight = 75;
+      if (window.scrollY > toggleHeight && !$('nav').hasClass('scrolled')) {
+        // $('#title').addClass('scrolled');
+        $('nav').addClass('scrolled');
+        $('.home').addClass('scrolled-padding');
         console.log('added class');
-      } else if (window.scrollY < toggleHeight && $('#title').hasClass('scrolled')) {
-        $('#title').removeClass('scrolled');
+      } else if (window.scrollY < toggleHeight && $('nav').hasClass('scrolled')) {
+        // $('#title').removeClass('scrolled');
+        $('nav').removeClass('scrolled');
+        $('.home').removeClass('scrolled-padding');
         console.log('removed class');
       }
     }
