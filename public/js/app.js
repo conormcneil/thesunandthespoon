@@ -27,6 +27,9 @@ app
         url: '/users',
         templateUrl: 'partials/users.html'
       })
+      .state('users.signup',{
+        templateUrl: 'partials/users/signup.html'
+      })
     $locationProvider.html5Mode(true);
   }])
 

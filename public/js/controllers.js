@@ -1,4 +1,4 @@
-app.controller('SunController',function($scope,$http,$stateParams) {
+app.controller('SunController',function($scope,$http,$stateParams,$state) {
   $scope.view = {};
   $scope.users = {};
   $scope.forms = {
@@ -33,6 +33,13 @@ app.controller('SunController',function($scope,$http,$stateParams) {
     !email ? $scope.users.errorMessage = 'Please enter a valid email address.' : true;
     // Check if user is signed up:
     // If users IS signed up, send to sign IN nested state
+
+    // uncomment to check database for user email
+    // $http.get('users').then(function() {})
+    // assuming does NOT exist,
+    $state.go('users.signup');
+    $('#user-email-submit').css('opacity',0);
+
     // If users IS NOT signed up, send to sign UP nested state
   };
 

@@ -1,6 +1,9 @@
 <div class="users state">
   <h2>Enter your email address</h2>
-  <p class="error">{{ users.errorMessage }}</p>
+  <p class="error" ng-show="users.errorMessage">{{ users.errorMessage }}</p>
   <input type="email" id="user-email" class="shadow-1" placeholder="Email address" autofocus ng-model="user.email">
   <input type="submit" id="user-email-submit" class="pointer" value="Next" ng-click="view.submit(user.email)">
+  <div class="signup-signin">
+    <div ui-view></div>
+  </div>
 </div>
