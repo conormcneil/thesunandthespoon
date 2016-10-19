@@ -248,8 +248,25 @@ exports.seed = function(knex, Promise) {
 
         // Post 12
         knex('images').insert({id:40,post_id:12,title:'Roasted Sweet Potato and Cauliflower Tacos with Pickled Beets and Avocado Crema 1',url:'https://res.cloudinary.com/dmuipy77o/image/upload/v1476906279/sweet_potato_tacos_1_gsvduf.jpg'}),
-        knex('images').insert({id:41,post_id:12,title:'Roasted Sweet Potato and Cauliflower Tacos with Pickled Beets and Avocado Crema 2',url:'https://res.cloudinary.com/dmuipy77o/image/upload/v1476906279/sweet_potato_tacos_2_f9f53m.jpg'}),knex('images').insert({id:43,post_id:12,title:'Roasted Sweet Potato and Cauliflower Tacos with Pickled Beets and Avocado Crema 4',url:'https://res.cloudinary.com/dmuipy77o/image/upload/v1476906279/sweet_potato_tacos_4_gtwssv.jpg'}),
-        knex('images').insert({id:42,post_id:12,title:'Roasted Sweet Potato and Cauliflower Tacos with Pickled Beets and Avocado Crema 3',url:'https://res.cloudinary.com/dmuipy77o/image/upload/v1476906279/sweet_potato_tacos_3_g7oa9f.jpg'})
+        knex('images').insert({id:41,post_id:12,title:'Roasted Sweet Potato and Cauliflower Tacos with Pickled Beets and Avocado Crema 2',url:'https://res.cloudinary.com/dmuipy77o/image/upload/v1476906279/sweet_potato_tacos_2_f9f53m.jpg'}),
+        knex('images').insert({id:42,post_id:12,title:'Roasted Sweet Potato and Cauliflower Tacos with Pickled Beets and Avocado Crema 3',url:'https://res.cloudinary.com/dmuipy77o/image/upload/v1476906279/sweet_potato_tacos_3_g7oa9f.jpg'}),
+        knex('images').insert({id:43,post_id:12,title:'Roasted Sweet Potato and Cauliflower Tacos with Pickled Beets and Avocado Crema 4',url:'https://res.cloudinary.com/dmuipy77o/image/upload/v1476906279/sweet_potato_tacos_4_gtwssv.jpg'}),
+
+        // Post 13
+        knex('images').insert({id:44,post_id:13,title:'Summer Salad with Spiced Chickpeas 1',url:'https://res.cloudinary.com/dmuipy77o/image/upload/v1476907046/summer_salad_1_wnk3dn.jpg'}),
+        knex('images').insert({id:45,post_id:13,title:'Summer Salad with Spiced Chickpeas 2',url:'https://res.cloudinary.com/dmuipy77o/image/upload/v1476907046/summer_salad_2_o0ba69.jpg'}),
+        knex('images').insert({id:46,post_id:13,title:'Summer Salad with Spiced Chickpeas 3',url:'https://res.cloudinary.com/dmuipy77o/image/upload/v1476907047/summer_salad_3_gg8d7n.jpg'}),
+        knex('images').insert({id:47,post_id:13,title:'Summer Salad with Spiced Chickpeas 4',url:'https://res.cloudinary.com/dmuipy77o/image/upload/v1476907046/summer_salad_4_bsyrdp.jpg'}),
+
+        // Post 14
+        knex('images').insert({id:48,post_id:14,title:"Farmer's Market Orzo Salad 1",url:"https://res.cloudinary.com/dmuipy77o/image/upload/v1476907601/FARMERS_MARKET_ORZO_SALAD1_ay8uob.jpg"}),
+        knex('images').insert({id:49,post_id:14,title:"Farmer's Market Orzo Salad 2",url:"https://res.cloudinary.com/dmuipy77o/image/upload/v1476907599/FARMERS_MARKET_ORZO_SALAD2_iq4jpf.jpg"}),
+        knex('images').insert({id:50,post_id:14,title:"Farmer's Market Orzo Salad 3",url:"https://res.cloudinary.com/dmuipy77o/image/upload/v1476907699/FARMERS_MARKET_ORZO_SALAD3_fzo6c8.jpg"}),
+        knex('images').insert({id:51,post_id:14,title:"Farmer's Market Orzo Salad 4",url:"https://res.cloudinary.com/dmuipy77o/image/upload/v1476907580/FARMERS_MARKET_ORZO_SALAD4_kua8ei.jpg"}),
+        knex('images').insert({id:52,post_id:14,title:"Farmer's Market Orzo Salad 5",url:"https://res.cloudinary.com/dmuipy77o/image/upload/v1476907601/FARMERS_MARKET_ORZO_SALAD5_go8azu.jpg"}),
+        knex('images').insert({id:53,post_id:14,title:"Farmer's Market Orzo Salad 6",url:"https://res.cloudinary.com/dmuipy77o/image/upload/v1476907570/FARMERS_MARKET_ORZO_SALAD6_zahl6y.jpg"}),
+        knex('images').insert({id:54,post_id:14,title:"Farmer's Market Orzo Salad 7",url:"https://res.cloudinary.com/dmuipy77o/image/upload/v1476907601/FARMERS_MARKET_ORZO_SALAD7_nfvuvo.jpg"}),
+        knex('images').insert({id:55,post_id:14,title:"Farmer's Market Orzo Salad 8",url:"https://res.cloudinary.com/dmuipy77o/image/upload/v1476907598/FARMERS_MARKET_ORZO_SALAD8_ogwzie.jpg"})
 
 
 
