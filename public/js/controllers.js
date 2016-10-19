@@ -43,6 +43,14 @@ app.controller('SunController',function($scope,$http,$stateParams,$state) {
     // If users IS NOT signed up, send to sign UP nested state
   };
 
+  $scope.users.signup = function(name,password,passwordConfirm) {
+    if (password !== passwordConfirm) {
+      $scope.users.errorMessage = 'Passwords do not match.';
+      return;
+    }
+    // $http.post('users',user).then(function() {})
+  }
+
 });
 
 app.controller('RecipeController',function($scope,$http,$stateParams,$state) {

@@ -5,5 +5,5 @@
   <input type="password" name="password" class="shadow-1" ng-model="user.signup.password">
   <label for="passwordConfirm">Confirm your password</label>
   <input type="password" name="passwordConfirm" class="shadow-1" ng-model="user.signup.passwordConfirm">
-  <input type="submit">
+  <input type="submit" ng-click="users.signup(user.signup.name,user.signup.password,user.signup.passwordConfirm)">
 </div>
