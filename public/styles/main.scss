@@ -36,6 +36,11 @@ a {
   font-variant: small-caps;
   color: $accent;
 }
+.error {
+  margin: 0;
+  padding: 0;
+  color: red;
+}
 
 @media(min-width: 320px) { // iPhone 5
   body {
@@ -240,6 +245,25 @@ a {
   }
   .users {
     width: 100%;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: calc((100vh - 125px) / 2);
+    // background: red;
+    #user-email {
+      padding: 5px;
+      margin-top: 25px;
+      width: 90%;
+      font-size: 1.1em;
+    }
+    #user-email-submit {
+      margin-top: 10px;
+      :active {
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+      }
+    }
   }
 }
 

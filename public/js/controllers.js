@@ -1,5 +1,6 @@
 app.controller('SunController',function($scope,$http,$stateParams) {
   $scope.view = {};
+  $scope.users = {};
   $scope.forms = {
     menu: false // false
   };
@@ -26,6 +27,15 @@ app.controller('SunController',function($scope,$http,$stateParams) {
   $scope.toggle = function(form) {
     $scope.forms[form] = !$scope.forms[form];
   };
+
+  $scope.view.submit = function(email) {
+    $scope.users.errorMessage ? delete $scope.users.errorMessage : true;
+    !email ? $scope.users.errorMessage = 'Please enter a valid email address.' : true;
+    // Check if user is signed up:
+    // If users IS signed up, send to sign IN nested state
+    // If users IS NOT signed up, send to sign UP nested state
+  };
+
 });
 
 app.controller('RecipeController',function($scope,$http,$stateParams,$state) {

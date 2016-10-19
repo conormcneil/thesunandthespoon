@@ -32,6 +32,11 @@ a {
   font-variant: small-caps;
   color: #ffa000; }
 
+.error {
+  margin: 0;
+  padding: 0;
+  color: red; }
+
 @media (min-width: 320px) {
   body {
     margin: 0;
@@ -202,7 +207,22 @@ a {
       width: 100%; }
 
   .users {
-    width: 100%; } }
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: calc((100vh - 125px) / 2); }
+    .users #user-email {
+      padding: 5px;
+      margin-top: 25px;
+      width: 90%;
+      font-size: 1.1em; }
+    .users #user-email-submit {
+      margin-top: 10px; }
+      .users #user-email-submit :active {
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); } }
 @media (min-width: 375px) {
   .title {
     margin-top: 20px;
