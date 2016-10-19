@@ -23,6 +23,10 @@ app
         url: '/about',
         templateUrl: 'partials/about-me.html'
       })
+      .state('users',{
+        url: '/users',
+        templateUrl: 'partials/users.html'
+      })
     $locationProvider.html5Mode(true);
   }])
 
