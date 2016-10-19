@@ -239,7 +239,10 @@ exports.seed = function(knex, Promise) {
           post_id: 10,
           title: "Linguine with Zucchini and Quelite-Pecan Pesto 2",
           url: "https://res.cloudinary.com/dmuipy77o/image/upload/v1476901805/linguine_with_zucchini_and_quelite-pecan_pesto_2_yc7jfi.jpg"
-        })
+        }),
+
+        // Post 11
+        knex('images').insert({id:37,post_id:11,title:'New Potato and Asparagus Salad 1',url:'https://res.cloudinary.com/dmuipy77o/image/upload/v1476905056/new_potato_and_asparagus_salad_1_erhwew.jpg'}),knex('images').insert({id:38,post_id:11,title:'New Potato and Asparagus Salad 2',url:'https://res.cloudinary.com/dmuipy77o/image/upload/v1476905055/new_potato_and_asparagus_salad_2_nrsbhz.jpg'}),knex('images').insert({id:39,post_id:11,title:'New Potato and Asparagus Salad 3',url:'https://res.cloudinary.com/dmuipy77o/image/upload/v1476905055/new_potato_and_asparagus_salad_3_xo8n4c.jpg'})
 
 
 
