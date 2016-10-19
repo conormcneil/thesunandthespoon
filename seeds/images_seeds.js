@@ -225,6 +225,20 @@ exports.seed = function(knex, Promise) {
           post_id: 9,
           title: "Vegan Pumpkin Spice Snickerdoodles 3",
           url: "https://res.cloudinary.com/dmuipy77o/image/upload/v1476901516/vegan_pumpkin_spice_snickerdoodles_3_hs06um.jpg"
+        }),
+
+        // Post 10
+        knex('images').insert({
+          id: 35,
+          post_id: 10,
+          title: "Linguine with Zucchini and Quelite-Pecan Pesto 1",
+          url: "https://res.cloudinary.com/dmuipy77o/image/upload/v1476901805/linguine_with_zucchini_and_quelite-pecan_pesto_1_blv0ed.jpg"
+        }),
+        knex('images').insert({
+          id: 36,
+          post_id: 10,
+          title: "Linguine with Zucchini and Quelite-Pecan Pesto 2",
+          url: "https://res.cloudinary.com/dmuipy77o/image/upload/v1476901805/linguine_with_zucchini_and_quelite-pecan_pesto_2_yc7jfi.jpg"
         })
 
 
