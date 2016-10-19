@@ -1,7 +1,7 @@
-var id = 37; // int
-var post_id = 11 // int
+var id = 40; // int
+var post_id = 12 // int
 var title = 'New Potato and Asparagus Salad'; // string
-var url = ["https://res.cloudinary.com/dmuipy77o/image/upload/v1476905056/new_potato_and_asparagus_salad_1_erhwew.jpg","https://res.cloudinary.com/dmuipy77o/image/upload/v1476905055/new_potato_and_asparagus_salad_2_nrsbhz.jpg","https://res.cloudinary.com/dmuipy77o/image/upload/v1476905055/new_potato_and_asparagus_salad_3_xo8n4c.jpg"]; // array of strings for each image URL
+var url = ["https://res.cloudinary.com/dmuipy77o/image/upload/v1476906279/sweet_potato_tacos_1_gsvduf.jpg","https://res.cloudinary.com/dmuipy77o/image/upload/v1476906279/sweet_potato_tacos_2_f9f53m.jpg","https://res.cloudinary.com/dmuipy77o/image/upload/v1476906279/sweet_potato_tacos_3_g7oa9f.jpg","https://res.cloudinary.com/dmuipy77o/image/upload/v1476906279/sweet_potato_tacos_4_gtwssv.jpg"]; // array of strings for each image URL
 
 function makeSeed(id,post_id,title,url) {
   var output = '';
@@ -16,11 +16,3 @@ function makeSeed(id,post_id,title,url) {
 }
 
 console.log(makeSeed(id,post_id,title,url));
-
-
-// knex('images').insert({
-//   id: 36,
-//   post_id: 10,
-//   title: "Linguine with Zucchini and Quelite-Pecan Pesto 2",
-//   url: "https://res.cloudinary.com/dmuipy77o/image/upload/v1476901805/linguine_with_zucchini_and_quelite-pecan_pesto_2_yc7jfi.jpg"
-// })
