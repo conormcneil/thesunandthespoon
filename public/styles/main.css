@@ -37,6 +37,9 @@ a {
   padding: 0;
   color: red; }
 
+input {
+  text-align: center; }
+
 @media (min-width: 320px) {
   body {
     margin: 0;
@@ -308,7 +311,10 @@ a {
   .recipe .image-secondary {
     width: 50%; }
   .recipe .ingredients {
-    width: 30%; } }
+    width: 30%; }
+
+  .users #user-email {
+    width: 35%; } }
 @media (min-width: 1024px) {
   body {
     display: flex;
