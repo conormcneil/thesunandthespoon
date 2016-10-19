@@ -48,7 +48,9 @@ app.controller('SunController',function($scope,$http,$stateParams,$state) {
       $scope.users.errorMessage = 'Passwords do not match.';
       return;
     }
-    // $http.post('users',user).then(function() {})
+    $http.get('users/signup').then(function(data) {
+      console.log(data);
+    })
   }
 
 });
