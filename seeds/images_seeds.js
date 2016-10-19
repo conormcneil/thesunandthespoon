@@ -18,6 +18,7 @@ exports.seed = function(knex, Promise) {
           title: "Buddha Bowls 2",
           url: "https://res.cloudinary.com/dmuipy77o/image/upload/v1475441460/buddha_bowls_2_be2uft.jpg"
         }),
+
         // Post 2
         knex('images').insert({
           id: 3,
@@ -49,6 +50,7 @@ exports.seed = function(knex, Promise) {
           title: "Acai Bowl 5",
           url: "https://res.cloudinary.com/dmuipy77o/image/upload/v1475450831/acai_bowl_5_lujn57.jpg"
         }),
+
         // Post 3
         knex('images').insert({
           id: 8,
@@ -86,6 +88,8 @@ exports.seed = function(knex, Promise) {
           title: "Peachy Keen Cheesecake 6",
           url: "https://res.cloudinary.com/dmuipy77o/image/upload/v1475511370/peach_cheesecake_6_zdpajf.jpg"
         }),
+
+        // Post 4
         knex('images').insert({
           id: 14,
           post_id: 4,
@@ -116,6 +120,8 @@ exports.seed = function(knex, Promise) {
           title: "Banana Bread Granola 5",
           url: "https://res.cloudinary.com/dmuipy77o/image/upload/v1475518697/banana_bread_granola_1_xyg7rg.jpg"
         }),
+
+        // Post 5
         knex('images').insert({
           id: 19,
           post_id: 5,
@@ -128,6 +134,8 @@ exports.seed = function(knex, Promise) {
           title: "Blueberry Streusel Baked Oatmeal 2",
           url: "https://res.cloudinary.com/dmuipy77o/image/upload/v1475548717/blueberry_oatmeal_2_cjajzx.jpg"
         }),
+
+        // Post 6
         knex('images').insert({
           id: 21,
           post_id: 6,
@@ -158,6 +166,8 @@ exports.seed = function(knex, Promise) {
           title: "Cinammon Rawnola 5",
           url: "https://res.cloudinary.com/dmuipy77o/image/upload/v1475605020/cinnamon_rawnola_5_dvzoa4.jpg"
         }),
+
+        // Post 7
         knex('images').insert({
           id: 26,
           post_id: 7,
@@ -181,7 +191,44 @@ exports.seed = function(knex, Promise) {
           post_id: 7,
           title: "Sweet Chili BBQ Roasted Vegetables 4",
           url: "https://res.cloudinary.com/dmuipy77o/image/upload/v1475605648/bbq_roasted_vegetables_4_nmclgy.jpg"
+        }),
+
+        // Post 8
+        knex('images').insert({
+          id: 30,
+          post_id: 8,
+          title: "Spiced Toffee Mixed Nuts 1",
+          url: "https://res.cloudinary.com/dmuipy77o/image/upload/v1476900725/spiced_toffee_mixed_nuts_1_sux6gs.jpg"
+        }),
+        knex('images').insert({
+          id: 31,
+          post_id: 8,
+          title: "Spiced Toffee Mixed Nuts 2",
+          url: "https://res.cloudinary.com/dmuipy77o/image/upload/v1476900726/spiced_toffee_mixed_nuts_2_a4nkqi.jpg"
+        }),
+
+        // Post 9
+        knex('images').insert({
+          id: 32,
+          post_id: 9,
+          title: "Vegan Pumpkin Spice Snickerdoodles 1",
+          url: "https://res.cloudinary.com/dmuipy77o/image/upload/v1476901516/vegan_pumpkin_spice_snickerdoodles_1_xlktfn.jpg"
+        }),
+        knex('images').insert({
+          id: 33,
+          post_id: 9,
+          title: "Vegan Pumpkin Spice Snickerdoodles 2",
+          url: "https://res.cloudinary.com/dmuipy77o/image/upload/v1476901516/vegan_pumpkin_spice_snickerdoodles_2_okzmzm.jpg"
+        }),
+        knex('images').insert({
+          id: 34,
+          post_id: 9,
+          title: "Vegan Pumpkin Spice Snickerdoodles 3",
+          url: "https://res.cloudinary.com/dmuipy77o/image/upload/v1476901516/vegan_pumpkin_spice_snickerdoodles_3_hs06um.jpg"
         })
+
+
+
       ]);
     });
 };
