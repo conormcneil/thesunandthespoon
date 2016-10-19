@@ -47,9 +47,11 @@ a {
 
   nav {
     z-index: 50;
-    width: calc(100vw - 20px);
+    width: 100vw;
     border-top: 1px solid rgba(128, 128, 128, 0.25);
     background: white;
+    position: fixed;
+    bottom: 0;
     display: flex;
     justify-content: space-between;
     align-items: center; }
@@ -65,8 +67,10 @@ a {
     nav #clear-search {
       height: 30px; }
     nav .mobile-menu {
+      padding-left: 10px;
       height: 2.5em; }
     nav .search {
+      padding-right: 10px;
       cursor: pointer; }
 
   #title {
@@ -195,7 +199,10 @@ a {
       .recipe .ingredients ul li {
         font-size: 0.75em; }
     .recipe .instructions {
-      width: 100%; } }
+      width: 100%; }
+
+  .users {
+    width: 100%; } }
 @media (min-width: 375px) {
   .title {
     margin-top: 20px;
@@ -237,6 +244,8 @@ a {
     background: none;
     width: 90vw;
     border: none;
+    position: relative;
+    display: flex;
     top: 0;
     left: auto;
     height: 0%; }
