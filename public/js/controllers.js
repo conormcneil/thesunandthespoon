@@ -26,9 +26,6 @@ app.controller('SunController',function($scope,$http,$stateParams) {
   $scope.toggle = function(form) {
     $scope.forms[form] = !$scope.forms[form];
   };
-  window.setTimeout(function() {
-    console.log($scope.view.posts);
-  },500);
 });
 
 app.controller('RecipeController',function($scope,$http,$stateParams,$state) {
