@@ -30,6 +30,9 @@ app
       .state('users.signup',{
         templateUrl: 'partials/users/signup.html'
       })
+      .state('users.signin',{
+        templateUrl: 'partials/users/signin.html'
+      })
     $locationProvider.html5Mode(true);
   }])
 
