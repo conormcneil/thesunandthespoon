@@ -185,14 +185,24 @@ a {
   }
   .about-me {
     margin-bottom: 80px;
-    img {
-      width: 100%;
+    img:first-child {
+      width: 30%;
     }
     p {
       font-size: 1.1em;
     }
     a {
       color: $accent;
+    }
+    .photos {
+      display: flex;
+      justify-content: center;
+      flex-flow: row wrap;
+      img {
+        padding: 10px;
+        width: 20%;
+        height: 20%;
+      }
     }
   }
   footer {

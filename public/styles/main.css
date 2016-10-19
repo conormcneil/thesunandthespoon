@@ -158,12 +158,20 @@ a {
 
   .about-me {
     margin-bottom: 80px; }
-    .about-me img {
-      width: 100%; }
+    .about-me img:first-child {
+      width: 30%; }
     .about-me p {
       font-size: 1.1em; }
     .about-me a {
       color: #ffa000; }
+    .about-me .photos {
+      display: flex;
+      justify-content: center;
+      flex-flow: row wrap; }
+      .about-me .photos img {
+        padding: 10px;
+        width: 20%;
+        height: 20%; }
 
   footer {
     position: absolute;
