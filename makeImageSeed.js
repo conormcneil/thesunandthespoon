@@ -1,6 +1,6 @@
 var id = 40; // int
 var post_id = 12 // int
-var title = 'New Potato and Asparagus Salad'; // string
+var title = 'Roasted Sweet Potato and Cauliflower Tacos with Pickled Beets and Avocado Crema'; // string
 var url = ["https://res.cloudinary.com/dmuipy77o/image/upload/v1476906279/sweet_potato_tacos_1_gsvduf.jpg","https://res.cloudinary.com/dmuipy77o/image/upload/v1476906279/sweet_potato_tacos_2_f9f53m.jpg","https://res.cloudinary.com/dmuipy77o/image/upload/v1476906279/sweet_potato_tacos_3_g7oa9f.jpg","https://res.cloudinary.com/dmuipy77o/image/upload/v1476906279/sweet_potato_tacos_4_gtwssv.jpg"]; // array of strings for each image URL
 
 function makeSeed(id,post_id,title,url) {

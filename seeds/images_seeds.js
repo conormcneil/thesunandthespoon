@@ -242,10 +242,14 @@ exports.seed = function(knex, Promise) {
         }),
 
         // Post 11
-        knex('images').insert({id:37,post_id:11,title:'New Potato and Asparagus Salad 1',url:'https://res.cloudinary.com/dmuipy77o/image/upload/v1476905056/new_potato_and_asparagus_salad_1_erhwew.jpg'}),knex('images').insert({id:38,post_id:11,title:'New Potato and Asparagus Salad 2',url:'https://res.cloudinary.com/dmuipy77o/image/upload/v1476905055/new_potato_and_asparagus_salad_2_nrsbhz.jpg'}),knex('images').insert({id:39,post_id:11,title:'New Potato and Asparagus Salad 3',url:'https://res.cloudinary.com/dmuipy77o/image/upload/v1476905055/new_potato_and_asparagus_salad_3_xo8n4c.jpg'}),
+        knex('images').insert({id:37,post_id:11,title:'New Potato and Asparagus Salad 1',url:'https://res.cloudinary.com/dmuipy77o/image/upload/v1476905056/new_potato_and_asparagus_salad_1_erhwew.jpg'}),
+        knex('images').insert({id:38,post_id:11,title:'New Potato and Asparagus Salad 2',url:'https://res.cloudinary.com/dmuipy77o/image/upload/v1476905055/new_potato_and_asparagus_salad_2_nrsbhz.jpg'}),
+        knex('images').insert({id:39,post_id:11,title:'New Potato and Asparagus Salad 3',url:'https://res.cloudinary.com/dmuipy77o/image/upload/v1476905055/new_potato_and_asparagus_salad_3_xo8n4c.jpg'}),
 
         // Post 12
-        knex('images').insert({id:40,post_id:12,title:'New Potato and Asparagus Salad 1',url:'https://res.cloudinary.com/dmuipy77o/image/upload/v1476906279/sweet_potato_tacos_1_gsvduf.jpg'}),knex('images').insert({id:41,post_id:12,title:'New Potato and Asparagus Salad 2',url:'https://res.cloudinary.com/dmuipy77o/image/upload/v1476906279/sweet_potato_tacos_2_f9f53m.jpg'}),knex('images').insert({id:42,post_id:12,title:'New Potato and Asparagus Salad 3',url:'https://res.cloudinary.com/dmuipy77o/image/upload/v1476906279/sweet_potato_tacos_3_g7oa9f.jpg'}),knex('images').insert({id:43,post_id:12,title:'New Potato and Asparagus Salad 4',url:'https://res.cloudinary.com/dmuipy77o/image/upload/v1476906279/sweet_potato_tacos_4_gtwssv.jpg'})
+        knex('images').insert({id:40,post_id:12,title:'Roasted Sweet Potato and Cauliflower Tacos with Pickled Beets and Avocado Crema 1',url:'https://res.cloudinary.com/dmuipy77o/image/upload/v1476906279/sweet_potato_tacos_1_gsvduf.jpg'}),
+        knex('images').insert({id:41,post_id:12,title:'Roasted Sweet Potato and Cauliflower Tacos with Pickled Beets and Avocado Crema 2',url:'https://res.cloudinary.com/dmuipy77o/image/upload/v1476906279/sweet_potato_tacos_2_f9f53m.jpg'}),knex('images').insert({id:43,post_id:12,title:'Roasted Sweet Potato and Cauliflower Tacos with Pickled Beets and Avocado Crema 4',url:'https://res.cloudinary.com/dmuipy77o/image/upload/v1476906279/sweet_potato_tacos_4_gtwssv.jpg'}),
+        knex('images').insert({id:42,post_id:12,title:'Roasted Sweet Potato and Cauliflower Tacos with Pickled Beets and Avocado Crema 3',url:'https://res.cloudinary.com/dmuipy77o/image/upload/v1476906279/sweet_potato_tacos_3_g7oa9f.jpg'})
 
 
 
