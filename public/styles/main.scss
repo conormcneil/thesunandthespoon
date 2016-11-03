@@ -42,6 +42,11 @@ a {
 input {
   text-align: center;
 }
+#scroll-finder {
+  padding: 0;
+  margin: 0 auto;
+  height: 100px;
+}
 
 @media(min-width: 320px) { // iPhone 5
   body {
@@ -176,6 +181,7 @@ input {
     width: 95%;
     .preview-date, .preview-title, .preview-category {
       margin: 0;
+      font-variant: small-caps;
     }
     .preview-date, .preview-category {
       color: rgba(99,99,99,0.6);
