@@ -1,388 +1,466 @@
-@media(min-width: 320px) { // iPhone 5
-  body {
-    margin: 0;
-    padding: 0;
-    width: 95vw;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin: 0 auto;
-    font-family: $font1;
-  }
-  nav {
-    z-index: 50;
-    width: 100vw;
-    border-top: 1px solid rgba(grey,0.25);
-    background: white;
-    position: fixed;
-    bottom: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    #search {
-      text-align: center;
-      font-family: $font1;
-      font-size: 1.3em;
-      border: none;
-      height: 30px;
-      width: 60%;
-      max-width: 80%;
-      box-shadow: 1px 1px 3px rgba(grey,0.25);
-    }
-    #clear-search {
-      height: 30px;
-    }
-    .mobile-menu {
-      padding-left: 10px;
-      height: 2.5em;
-    }
-    .search {
-      padding-right: 10px;
-      cursor: pointer;
-    }
-  }
-  #title {
-    font-variant: small-caps;
-    position: relative;
-    top: 0;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 2em;
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    z-index: 25;
-    #underline {
-      border-bottom: 1px solid black;
-      width: 100%;
-    }
-  }
-  .scrolled {
-    position: fixed;
-    top: 15px;
-  }
-  .scrolled-padding {
-    padding-top: 40px !important;
-  }
-  sun-menu {
-    width: 100vw;
-    height: 100vh;
-    z-index: 49;
-    background: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow-y: scroll;
-    display: flex;
-    flex-flow: row wrap;
-    .menu {
-      width: 100%;
-      padding: 2.5vw;
-      height: 75vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-flow: column;
-      .state-link {
-        font-size: 1.85em;
-        padding: 5px;
-      }
-    }
-    .mini-me {
-      padding: 5px;
-      margin-bottom: 80px;
-      width: 100%;
-      border-top: 1px solid rgba(grey,0.25);
-      display: flex;
-      flex-flow: column;
-      align-items: center;
-      #preview-headshot {
-        margin-top: 85px;
-        width: 80%;
-        border-radius: 8px;
-      }
-      p {
-        text-align: center;
+@media(min-width: 320px) {
+    // iPhone 5
+
+    body {
         margin: 0;
-      }
+        padding: 0;
+        width: 95vw;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: 0 auto;
+        font-family: $font1;
     }
-  }
-  #main {
-    padding: 0;
-    margin: 0;
-    position: relative;
-    width: 100%;
-    height: calc(100vh - 135px);
-  }
-  .home {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    text-align: center;
-    recipe-preview {
-      color: $accent;
-    }
-  }
-  .preview {
-    width: 95%;
-    .preview-date, .preview-title, .preview-category {
-      margin: 0;
-      font-variant: small-caps;
-    }
-    .preview-date, .preview-category {
-      color: rgba(99,99,99,0.6);
-    }
-    .preview-category {
-      margin-bottom: 70px;
-    }
-    .recipe-preview {
-      width: 100%;
-    }
-  }
-  .about-me {
-    margin-bottom: 80px;
-    img:first-child {
-      width: 30%;
-    }
-    p {
-      font-size: 1.1em;
-    }
-    a {
-      color: $accent;
-    }
-    .photos {
-      display: flex;
-      justify-content: center;
-      flex-flow: row wrap;
-      img {
-        padding: 10px;
-        width: 20%;
-        height: 20%;
-      }
-    }
-  }
-  footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100vw;
-  }
-  .recipe {
-    margin-bottom: 80px;
-    display: flex;
-    flex-flow: row wrap;
-    .recipe-title {
-      width: 100vw;
-    }
-    .image-primary, .image-secondary {
-      width: 60%;
-      height: 60%;
-    }
-    .image-secondary {
-      align-self: flex-end;
-    }
-    .ingredients {
-      width: 100%;
-      ul {
-        li {
-          font-size: 0.75em;
+
+    nav {
+        z-index: 50;
+        width: 100vw;
+        border-top: 1px solid rgba(grey,0.25);
+        background: white;
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        #search {
+            text-align: center;
+            font-family: $font1;
+            font-size: 1.3em;
+            border: none;
+            height: 30px;
+            width: 60%;
+            max-width: 80%;
+            box-shadow: 1px 1px 3px rgba(grey,0.25);
         }
-      }
+
+        #clear-search {
+            height: 30px;
+        }
+
+        .mobile-menu {
+            padding-left: 10px;
+            height: 2.5em;
+        }
+
+        .search {
+            padding-right: 10px;
+            cursor: pointer;
+        }
     }
-    .instructions {
-      width: 100%;
+
+    #title {
+        font-variant: small-caps;
+        position: relative;
+        top: 0;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 2em;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        z-index: 25;
+
+        #underline {
+            border-bottom: 1px solid black;
+            width: 100%;
+        }
     }
-  }
-  .users {
-    width: 100%;
-    text-align: center;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    h2 {
-      padding: 0;
-      margin: 0;
+
+    .scrolled {
+        position: fixed;
+        top: 15px;
     }
-    #user-email {
-      padding: 5px;
-      margin-top: 25px;
-      width: 90%;
-      font-size: 1.1em;
+
+    .scrolled-padding {
+        padding-top: 40px !important;
     }
-    #user-email-submit {
-      margin-top: 10px;
-      :active {
-        box-shadow: 0 3px 6px rgba(0,0,0,0.16);
-      }
+
+    sun-menu {
+        width: 100vw;
+        height: 100vh;
+        z-index: 49;
+        background: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow-y: scroll;
+        display: flex;
+        flex-flow: row wrap;
+
+        .menu {
+            width: 100%;
+            padding: 2.5vw;
+            height: 75vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column;
+
+            .state-link {
+                font-size: 1.85em;
+                padding: 5px;
+            }
+        }
+
+        .mini-me {
+            padding: 5px;
+            margin-bottom: 80px;
+            width: 100%;
+            border-top: 1px solid rgba(grey,0.25);
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+
+            #preview-headshot {
+                margin-top: 85px;
+                width: 80%;
+                border-radius: 8px;
+            }
+
+            p {
+                text-align: center;
+                margin: 0;
+            }
+        }
     }
-    .signup-signin {
-      width: 100%;
+
+    #main {
+        padding: 0;
+        margin: 0;
+        position: relative;
+        width: 100%;
+        height: calc(100vh - 135px);
     }
-    .sign {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: left;
-      label {
+
+    .home {
         margin: 0;
         padding: 0;
-        color: $accent;
-      }
-      input {
-        margin: 10px;
-        padding: 5px;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        text-align: center;
+
+        recipe-preview {
+            color: $accent;
+        }
+    }
+
+    .preview {
+        width: 95%;
+
+        .preview-category,
+        .preview-date,
+        .preview-title {
+            margin: 0;
+            font-variant: small-caps;
+        }
+
+        .preview-category,
+        .preview-date {
+            color: rgba(99,99,99,0.6);
+        }
+
+        .preview-category {
+            margin-bottom: 70px;
+        }
+
+        .recipe-preview {
+            width: 100%;
+        }
+    }
+
+    .about-me {
+        margin-bottom: 80px;
+
+        img:first-child {
+            width: 30%;
+        }
+
+        p {
+            font-size: 1.1em;
+        }
+
+        a {
+            color: $accent;
+        }
+
+        .photos {
+            display: flex;
+            justify-content: center;
+            flex-flow: row wrap;
+
+            img {
+                padding: 10px;
+                width: 20%;
+                height: 20%;
+            }
+        }
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+    }
+
+    .recipe {
+        margin-bottom: 80px;
+        display: flex;
+        flex-flow: row wrap;
+
+        .recipe-title {
+            width: 100vw;
+        }
+
+        .image-primary,
+        .image-secondary {
+            width: 60%;
+            height: 60%;
+        }
+
+        .image-secondary {
+            align-self: flex-end;
+        }
+
+        .ingredients {
+            width: 100%;
+
+            ul {
+                li {
+                    font-size: 0.75em;
+                }
+            }
+        }
+
+        .instructions {
+            width: 100%;
+        }
+    }
+
+    .users {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            padding: 0;
+            margin: 0;
+        }
+
+        #user-email {
+            padding: 5px;
+            margin-top: 25px;
+            width: 90%;
+            font-size: 1.1em;
+        }
+
+        #user-email-submit {
+            margin-top: 10px;
+
+            :active {
+                box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+            }
+        }
+
+        .signup-signin {
+            width: 100%;
+        }
+
+        .sign {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: left;
+
+            label {
+                margin: 0;
+                padding: 0;
+                color: $accent;
+            }
+
+            input {
+                margin: 10px;
+                padding: 5px;
+                font-size: 1.1em;
+                width: 80%;
+            }
+        }
+    }
+}
+@media(min-width: 375px) {
+    // iPhone 6
+
+    .title {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .recipe {
+        .image-secondary {
+            align-self: flex-start;
+            width: 50%;
+        }
+
+        .ingredients {
+            width: 45%;
+        }
+    }
+}
+@media(min-width: 414px) {
+    // iPhone 6 Plus
+
+    body {
+        width: 90vw;
+    }
+
+    nav {
+        #search {
+            width: 70%;
+        }
+    }
+
+    .title {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    sun-menu {
         font-size: 1.1em;
-        width: 80%;
-      }
     }
-  }
-}
 
-@media(min-width: 375px) { // iPhone 6
-  .title {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .recipe {
-    .image-secondary {
-      align-self: flex-start;
-      width: 50%;
-    }
-    .ingredients {
-      width: 45%;
-    }
-  }
-}
+    .recipe {
+        .image-secondary {
+            padding: 10px;
+            align-self: center;
+            width: 45%;
+            height: 45%;
+        }
 
-@media(min-width: 414px) { // iPhone 6 Plus
-  body {
-    width: 90vw;
-  }
-  nav {
-    #search {
-      width: 70%;
+        .ingredients {
+            width: 45%;
+        }
     }
-  }
-  .title {
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
-  sun-menu {
-    font-size: 1.1em;
-  }
-  .recipe {
-    .image-secondary {
-      padding: 10px;
-      align-self: center;
-      width: 45%;
-      height: 45%;
-    }
-    .ingredients {
-      width: 45%;
-    }
-  }
 }
+@media(min-width: 768px) {
+    // iPad -
 
-@media(min-width: 768px) { // iPad - Portrait
-  .title {
-    font-size: 2.8em;
-    position: fixed;
-    width: 90vw;
-  }
-  nav {
-    background: none;
-    width: 90vw;
-    border: none;
-    position: relative;
-    display: flex;
-    top: 0;
-    left: auto;
-    height: 0%;
-  }
-  sun-menu {
-    padding-top: 150px;
-    width: 100%;
-    justify-content: space-between;
-    .menu {
-      width: 45%;
-      height: 60vh;
-      border-right: 1px solid rgba(grey,0.25);
+    .title {
+        font-size: 2.8em;
+        position: fixed;
+        width: 90vw;
     }
-    .mini-me {
-      margin: 5px;
-      border: none;
-      width: 45%;
-      height: 75vh;
-      #preview-headshot {
-        margin: 0;
-        padding: 0;
-        width: 50%;
-      }
+
+    nav {
+        background: none;
+        width: 90vw;
+        border: none;
+        position: relative;
+        display: flex;
+        top: 0;
+        left: auto;
+        height: 0;
     }
-  }
-  .home {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    .preview {
-      width: 30%;
+
+    sun-menu {
+        padding-top: 150px;
+        width: 100%;
+        justify-content: space-between;
+
+        .menu {
+            width: 45%;
+            height: 60vh;
+            border-right: 1px solid rgba(grey,0.25);
+        }
+
+        .mini-me {
+            margin: 5px;
+            border: none;
+            width: 45%;
+            height: 75vh;
+
+            #preview-headshot {
+                margin: 0;
+                padding: 0;
+                width: 50%;
+            }
+        }
     }
-  }
-  .about-me {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    img {
-      width: 60%;
+
+    .home {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+
+        .preview {
+            width: 30%;
+        }
     }
-  }
-  .recipe {
-    .image-primary {
-      width: 40%;
+
+    .about-me {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 60%;
+        }
     }
-    .image-secondary {
-      width: 50%;
+
+    .recipe {
+        .image-primary {
+            width: 40%;
+        }
+
+        .image-secondary {
+            width: 50%;
+        }
+
+        .ingredients {
+            width: 30%;
+        }
     }
-    .ingredients {
-      width: 30%;
+
+    .users {
+        #user-email {
+            width: 35%;
+        }
     }
-  }
-  .users {
-    #user-email {
-      width: 35%;
-    }
-  }
 }
+@media(min-width: 1024px) {
+    // iPad - Landscape
 
-@media(min-width: 1024px) { // iPad - Landscape
-  body {
-    display: flex;
-    justify-content: center;
-    position: relative;
-  }
-  .home {
-    .preview {
-      width: 30%;
+    body {
+        display: flex;
+        justify-content: center;
+        position: relative;
     }
-  }
-}
 
+    .home {
+        .preview {
+            width: 30%;
+        }
+    }
+}
 @media(min-width: 1280px) {
-  body {
-    width: 85vw;
-  }
-  nav {
-    width: 85vw;
-  }
-  .home {
-    .preview {
-      width: 22%;
+    body {
+        width: 85vw;
     }
-  }
+
+    nav {
+        width: 85vw;
+    }
+
+    .home {
+        .preview {
+            width: 22%;
+        }
+    }
 }

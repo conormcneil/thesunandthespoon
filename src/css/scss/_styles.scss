@@ -1,47 +1,59 @@
 .shadow-1 {
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12);
 }
+
 .shadow-2 {
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
 }
+
 .shadow-3 {
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19);
 }
+
 .shadow-4 {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25);
 }
+
 .shadow-5 {
-  box-shadow: 0 19px 38px rgba(0,0,0,0.30);
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30);
 }
+
 .accent {
-  color: $accent;
+    color: $accent;
 }
+
 ::-webkit-scrollbar {
     display: none;
 }
+
 a {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
+
 .pointer {
-  cursor: pointer;
+    cursor: pointer;
 }
+
 .state-title {
-  margin: 0;
-  text-align: center;
-  font-variant: small-caps;
-  color: $accent;
+    margin: 0;
+    text-align: center;
+    font-variant: small-caps;
+    color: $accent;
 }
+
 .error {
-  margin: 0;
-  padding: 0;
-  color: red;
+    margin: 0;
+    padding: 0;
+    color: red;
 }
+
 input {
-  text-align: center;
+    text-align: center;
 }
+
 #scroll-finder {
-  padding: 0;
-  margin: 0 auto;
-  height: 100px;
+    padding: 0;
+    margin: 0 auto;
+    height: 100px;
 }
