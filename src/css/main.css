@@ -177,7 +177,8 @@ input {
     .preview .preview-category {
       margin-bottom: 70px; }
     .preview .recipe-preview {
-      width: 100%; }
+      width: 250px;
+      height: 250px; }
 
   .about-me {
     margin-bottom: 80px; }

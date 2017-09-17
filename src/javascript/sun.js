@@ -34,15 +34,4 @@ app
         templateUrl: 'partials/users/signin.html'
       })
     $locationProvider.html5Mode(true);
-  }])
-
-  .directive('sunMenu',function() {
-    return {
-      templateUrl: 'partials/menu.html'
-    }
-  })
-  .directive('recipePreview',function() {
-    return {
-      templateUrl: 'partials/recipe-preview.html'
-    }
-  });
+}]);
