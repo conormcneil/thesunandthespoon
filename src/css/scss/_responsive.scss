@@ -150,6 +150,7 @@
 
     .preview {
         width: 95%;
+        background: red;
 
         .preview-category,
         .preview-date,
@@ -349,7 +350,7 @@
     }
 }
 @media(min-width: 768px) {
-    // iPad -
+    // iPad
 
     .title {
         font-size: 2.8em;
